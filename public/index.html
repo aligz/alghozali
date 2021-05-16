@@ -9,7 +9,24 @@
       name="description"
       content="Ali Alghozali Portfolio"
     />
-<!--    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86201907-1"></script>
+    <script>
+      const host = window.location.hostname;
+      if(host !== "localhost") {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-86201907-1');
+      }
+    </script>
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
